@@ -1,0 +1,19 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#111; display:flex; justify-content:center; padding:20px; }
+.grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px 220px 120px;
+  gap:10px;
+  width: 700px;
+}
+.item { border-radius:15px; overflow:hidden; display:flex; align-items:center; justify-content:center; font-weight:bold; }
+.item img { width:100%; height:100%; object-fit:cover; }
+.bolt { grid-column: span 2; background:#ccff00; }
+.phone { background:#ccff00; }
+.texto { background:#8a8a7a; color:black; font-size:35px; line-height:1; padding:15px; display:block; }
+.texto span { color:#ccff00; }
+.verde { grid-column: span 2; background:#32ff32; }
+.amarillo { background:#ccff00; font-size:60px; }
+.rayo { background:#ddd; font-size:50px; }
+.precio { background:#ccff00; font-size:40px; }
